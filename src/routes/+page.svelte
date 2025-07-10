@@ -28,14 +28,14 @@
 		{
 			id: 1,
 			title: "Foundation",
-			description: "Core programming and system fundamentals",
+			description: "Core Programming & System Fundamentals",
 			sections: [
 				{
 					title: "Core Programming",
 					items: [
-						{ id: 'go-fundamentals', title: 'Go programming fundamentals', url: 'https://hyperskill.org/courses/81-introduction-to-go' },
+						{ id: 'go-fundamentals', title: 'Go Programming Fundamentals', url: 'https://hyperskill.org/courses/81-introduction-to-go' },
 						{ id: 'go-advanced', title: 'Advanced Go', url: 'https://hyperskill.org/courses/25-go-developer' },
-						{ id: 'js-basics', title: 'JavaScript/TypeScript basics', url: 'https://www.educative.io/courses/learn-html-css-javascript-from-scratch' },
+						{ id: 'js-basics', title: 'JavaScript/TypeScript Basics', url: 'https://www.educative.io/courses/learn-html-css-javascript-from-scratch' },
 						{ id: 'typescript', title: 'TypeScript', url: 'https://www.udemy.com/course/understanding-typescript' },
 						{ id: 'tailwind', title: 'Tailwind CSS', url: 'https://www.udemy.com/course/tailwind-from-scratch' }
 					]
@@ -43,15 +43,15 @@
 				{
 					title: "SysOps Fundamentals",
 					items: [
-						{ id: 'linux-admin', title: 'Linux system administration', url: 'https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job' },
-						{ id: 'networking', title: 'Networking concepts (TCP/IP, DNS, DHCP, VLANs)', url: 'https://www.udemy.com/course/essential-computer-networking-for-devops-cloud-and-more/' },
+						{ id: 'linux-admin', title: 'Linux System Administration', url: 'https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job' },
+						{ id: 'networking', title: 'Networking Concepts (TCP/IP, DNS, DHCP, VLANs)', url: 'https://www.udemy.com/course/essential-computer-networking-for-devops-cloud-and-more/' },
 						{ id: 'ccna', title: 'CCNA', url: 'https://www.udemy.com/course/ccna-complete' }
 					]
 				},
 				{
 					title: "CI/CD & Version Control",
 					items: [
-						{ id: 'git-advanced', title: 'Git advanced workflows', url: 'https://www.datacamp.com/courses/advanced-git' },
+						{ id: 'git-advanced', title: 'Git Advanced Workflows', url: 'https://www.datacamp.com/courses/advanced-git' },
 						{ id: 'cicd', title: 'CI/CD', url: 'https://www.codecademy.com/learn/ext-courses/devsecops-in-continuous-integration-delivery-ci-cd' },
 						{ id: 'gitlab-cicd', title: 'GitLab CI/CD', url: 'https://kodekloud.com/courses/gitlab-ci-cd' },
 						{ id: 'github-actions', title: 'GitHub Actions', url: 'https://kodekloud.com/courses/github-actions' }
@@ -67,10 +67,10 @@
 				{
 					title: "Multi-Cloud Platforms",
 					items: [
-						{ id: 'aws', title: 'AWS', url: 'https://www.educative.io/courses/aws-solutions-architect-associate' },
-						{ id: 'gcp', title: 'Google Cloud Platform', url: 'https://www.coursera.org/professional-certificates/cloud-engineering-gcp' },
-						{ id: 'cloud-design', title: 'Cloud design principles', url: 'https://www.udemy.com/course/the-complete-cloud-computing-software-architecture-patterns' },
-						{ id: 'hybrid-cloud', title: 'Hybrid cloud', url: 'https://www.udemy.com/course/mastering-multicloud-and-hybrid-cloud-strategy-execution/' }
+						{ id: 'aws', title: 'AWS Solutions Architect', url: 'https://www.educative.io/courses/aws-solutions-architect-associate' },
+						{ id: 'gcp', title: 'Engineering Google Cloud Platform', url: 'https://www.coursera.org/professional-certificates/cloud-engineering-gcp' },
+						{ id: 'cloud-design', title: 'Cloud Design Principles', url: 'https://www.udemy.com/course/the-complete-cloud-computing-software-architecture-patterns' },
+						{ id: 'hybrid-cloud', title: 'Hybrid Cloud', url: 'https://www.udemy.com/course/mastering-multicloud-and-hybrid-cloud-strategy-execution/' }
 					]
 				},
 				{
@@ -83,9 +83,9 @@
 				{
 					title: "Kubernetes",
 					items: [
-						{ id: 'k8s-arch', title: 'Kubernetes architecture and frameworks', url: 'https://www.educative.io/courses/programming-with-kubernetes' },
-						{ id: 'k8s-admin', title: 'Kubernetes administration', url: 'https://kodekloud.com/courses/cka-certification-course-certified-kubernetes-administrator' },
-						{ id: 'istio', title: 'Service mesh concepts (Istio)', url: 'https://www.udemy.com/course/istio-hands-on-for-kubernetes' }
+						{ id: 'k8s-arch', title: 'Kubernetes Architecture and Frameworks', url: 'https://www.educative.io/courses/programming-with-kubernetes' },
+						{ id: 'k8s-admin', title: 'Kubernetes Administration', url: 'https://kodekloud.com/courses/cka-certification-course-certified-kubernetes-administrator' },
+						{ id: 'istio', title: 'Service Mesh Concepts (Istio)', url: 'https://www.udemy.com/course/istio-hands-on-for-kubernetes' }
 					]
 				}
 			]
@@ -93,7 +93,7 @@
 		{
 			id: 3,
 			title: "DevOps & Automation",
-			description: "Monitoring, observability, and DevSecOps practices",
+			description: "Monitoring, Observability, and DevSecOps Practices",
 			sections: [
 				{
 					title: "Monitoring & Observability",
@@ -116,23 +116,23 @@
 		{
 			id: 4,
 			title: "Advanced Topics",
-			description: "Database management and AI/ML integration",
+			description: "Database Management and AI/ML Integration",
 			sections: [
 				{
 					title: "Database & Data Management",
 					items: [
-						{ id: 'redis', title: 'Redis/Valkey administration', url: 'https://www.educative.io/courses/complete-guide-to-redis' },
-						{ id: 'nosql', title: 'NoSQL Database design and optimization', url: 'https://www.datacamp.com/courses/introduction-to-nosql' },
+						{ id: 'redis', title: 'Redis/Valkey Administration', url: 'https://www.educative.io/courses/complete-guide-to-redis' },
+						{ id: 'nosql', title: 'NoSQL Database Design and Optimization', url: 'https://www.datacamp.com/courses/introduction-to-nosql' },
 						{ id: 'mongodb', title: 'MongoDB', url: 'https://www.coursera.org/learn/introduction-to-mongodb' },
 						{ id: 'truenas', title: 'TrueNAS', url: 'https://www.udemy.com/course/truenas-fundamentals-for-beginners' },
-						{ id: 'vault', title: 'Secrets management (Vault)', url: 'https://www.udemy.com/course/hashicorp-vault' }
+						{ id: 'vault', title: 'Secrets Management (Vault)', url: 'https://www.udemy.com/course/hashicorp-vault' }
 					]
 				},
 				{
 					title: "AI/ML Integration",
 					items: [
-						{ id: 'llm', title: 'LLM integration', url: 'https://www.udemy.com/course/llm-engineering' },
-						{ id: 'mlops', title: 'Machine learning operations (MLOps)', url: 'https://www.datacamp.com/tracks/mlops-fundamentals' }
+						{ id: 'llm', title: 'LLM Integration', url: 'https://www.udemy.com/course/llm-engineering' },
+						{ id: 'mlops', title: 'Machine Learning Operations (MLOps)', url: 'https://www.datacamp.com/tracks/mlops-fundamentals' }
 					]
 				}
 			]
@@ -140,13 +140,13 @@
 		{
 			id: 5,
 			title: "Specialization",
-			description: "Advanced development and architecture skills",
+			description: "Advanced Development & Architecture Skills",
 			sections: [
 				{
 					title: "Further Programming",
 					items: [
-						{ id: 'svelte-tailwind', title: 'Svelte and Tailwind', url: 'https://www.educative.io/courses/building-reactive-apps-with-svelte-and-tailwind' },
-						{ id: 'sveltekit', title: 'Svelte and SvelteKit framework', url: 'https://www.udemy.com/course/practical-sveltekit-guide-build-and-deploy-real-world-apps' },
+						{ id: 'svelte-tailwind', title: 'Svelte & Tailwind', url: 'https://www.educative.io/courses/building-reactive-apps-with-svelte-and-tailwind' },
+						{ id: 'sveltekit', title: 'Svelte 5 & SvelteKit', url: 'https://www.udemy.com/course/practical-sveltekit-guide-build-and-deploy-real-world-apps' },
 						{ id: 'design-patterns', title: 'Design Patterns', url: 'https://www.udemy.com/course/working-with-design-patterns-in-go-golang' },
 						{ id: 'auth', title: 'Authentication', url: 'https://www.udemy.com/course/enterprise-oauth-for-developers' }
 					]
@@ -290,9 +290,6 @@
 		<footer class="mt-12 pt-8 border-t text-center" style="border-color: var(--color-palette-light);">
 			<p class="opacity-80" style="color: var(--color-palette-light);">
 				Daniel's Learning Roadmap • Built with SvelteKit
-			</p>
-			<p class="text-sm mt-2 opacity-60" style="color: var(--color-palette-light);">
-				Track my progress through comprehensive technology learning paths
 			</p>
 		</footer>
 	</main>
