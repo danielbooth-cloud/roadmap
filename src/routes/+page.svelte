@@ -180,7 +180,7 @@
 	<!-- Header Section -->
 	<header class="p-8">
 		<h1 class="text-4xl font-bold mb-4" style="color: var(--color-palette-light);">
-			Daniel's Learning Plan
+			Daniel's Learning Roadmap
 		</h1>
 		<p class="text-lg opacity-80 mb-6" style="color: var(--color-palette-light);">
 			Developing deep expertise across Homelab Operations, Cloud Infrastructure, and DevOps Engineering to build, automate, and scale modern systems with hands-on precision and industry-grade practices.
@@ -284,7 +284,6 @@
 			{/each}
 		</section>
 		{/if}
-
 
 		<!-- Footer Section -->
 		<footer class="mt-12 pt-8 border-t text-center" style="border-color: var(--color-palette-light);">

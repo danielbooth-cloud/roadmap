@@ -1,0 +1,231 @@
+<script lang="ts">
+	import { createEventDispatcher } from 'svelte';
+
+	interface CourseItem {
+		id: string;
+		title: string;
+		url: string;
+	}
+
+	interface Section {
+		title: string;
+		items: CourseItem[];
+	}
+
+	interface Phase {
+		id: number;
+		title: string;
+		description: string;
+		sections: Section[];
+	}
+
+	export let phases: Phase[];
+	export let completedItems: Set<string>;
+	export let inProgressItems: Set<string>;
+
+	const dispatch = createEventDispatcher();
+
+	// Tree state management
+	let expandedPhases: Set<number> = new Set();
+	let expandedSections: Set<string> = new Set();
+
+	function togglePhase(phaseId: number) {
+		if (expandedPhases.has(phaseId)) {
+			expandedPhases.delete(phaseId);
+		} else {
+			expandedPhases.add(phaseId);
+		}
+		expandedPhases = expandedPhases;
+	}
+
+	function toggleSection(sectionKey: string) {
+		if (expandedSections.has(sectionKey)) {
+			expandedSections.delete(sectionKey);
+		} else {
+			expandedSections.add(sectionKey);
+		}
+		expandedSections = expandedSections;
+	}
+
+	function getItemStatus(itemId: string): 'completed' | 'in-progress' | 'pending' {
+		if (completedItems.has(itemId)) return 'completed';
+		if (inProgressItems.has(itemId)) return 'in-progress';
+		return 'pending';
+	}
+
+	function getPhaseProgress(phase: Phase): number {
+		const allItems = phase.sections.flatMap(section => section.items);
+		const completed = allItems.filter(item => completedItems.has(item.id)).length;
+		return Math.round((completed / allItems.length) * 100);
+	}
+
+	function getSectionProgress(section: Section): number {
+		const completed = section.items.filter(item => completedItems.has(item.id)).length;
+		return Math.round((completed / section.items.length) * 100);
+	}
+
+	// Expand all phases by default
+	$: if (phases.length > 0) {
+		expandedPhases = new Set(phases.map(p => p.id));
+	}
+</script>
+
+<div class="course-tree" style="background-color: rgba(254, 254, 253, 0.02); border: 1px solid var(--color-palette-light); border-radius: 12px; padding: 24px;">
+	<h2 class="text-2xl font-semibold mb-6" style="color: var(--color-palette-light);">
+		📚 Complete Course Tree
+	</h2>
+	
+	<div class="tree-container">
+		{#each phases as phase}
+			{@const isPhaseExpanded = expandedPhases.has(phase.id)}
+			{@const phaseProgress = getPhaseProgress(phase)}
+			
+			<div class="phase-node mb-4">
+				<!-- Phase Header -->
+				<button 
+					class="phase-header w-full flex items-center justify-between p-4 rounded-lg border transition-all duration-200 hover:scale-[1.02]"
+					style="background-color: rgba(255, 26, 117, 0.1); border-color: var(--color-palette-pink);"
+					on:click={() => togglePhase(phase.id)}
+				>
+					<div class="flex items-center gap-3">
+						<span class="text-lg transition-transform duration-200" style="transform: rotate({isPhaseExpanded ? 90 : 0}deg);">
+							▶
+						</span>
+						<div class="text-left">
+							<h3 class="font-semibold" style="color: var(--color-palette-light);">
+								Learning Path {phase.id}: {phase.title}
+							</h3>
+							<p class="text-sm opacity-80" style="color: var(--color-palette-light);">
+								{phase.description}
+							</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-3">
+						<span class="text-sm font-medium" style="color: var(--color-palette-pink);">
+							{phaseProgress}%
+						</span>
+						<div class="w-16 h-2 rounded-full" style="background-color: rgba(254, 254, 253, 0.2);">
+							<div class="h-2 rounded-full transition-all duration-300" style="width: {phaseProgress}%; background-color: var(--color-palette-pink);"></div>
+						</div>
+					</div>
+				</button>
+				
+				<!-- Phase Content -->
+				{#if isPhaseExpanded}
+					<div class="phase-content ml-8 mt-3 space-y-3">
+						{#each phase.sections as section, sectionIndex}
+							{@const sectionKey = `${phase.id}-${sectionIndex}`}
+							{@const isSectionExpanded = expandedSections.has(sectionKey)}
+							{@const sectionProgress = getSectionProgress(section)}
+							
+							<div class="section-node">
+								<!-- Section Header -->
+								<button 
+									class="section-header w-full flex items-center justify-between p-3 rounded-lg border transition-all duration-200 hover:bg-opacity-80"
+									style="background-color: rgba(254, 254, 253, 0.05); border-color: var(--color-palette-light);"
+									on:click={() => toggleSection(sectionKey)}
+								>
+									<div class="flex items-center gap-3">
+										<span class="text-sm transition-transform duration-200" style="transform: rotate({isSectionExpanded ? 90 : 0}deg);">
+											▶
+										</span>
+										<h4 class="font-medium" style="color: var(--color-palette-light);">
+											{section.title}
+										</h4>
+									</div>
+									<div class="flex items-center gap-2">
+										<span class="text-xs" style="color: var(--color-palette-pink);">
+											{sectionProgress}%
+										</span>
+										<div class="w-12 h-1.5 rounded-full" style="background-color: rgba(254, 254, 253, 0.2);">
+											<div class="h-1.5 rounded-full transition-all duration-300" style="width: {sectionProgress}%; background-color: var(--color-palette-pink);"></div>
+										</div>
+									</div>
+								</button>
+								
+								<!-- Section Content -->
+								{#if isSectionExpanded}
+									<div class="section-content ml-6 mt-2 space-y-2">
+										{#each section.items as item}
+											{@const status = getItemStatus(item.id)}
+											
+											<div class="course-item flex items-center gap-3 p-3 rounded-lg border transition-all duration-200 hover:bg-opacity-80"
+												style="background-color: rgba(254, 254, 253, 0.03); border-color: rgba(254, 254, 253, 0.1);">
+												
+												<!-- Status Icon -->
+												<div class="status-icon flex-shrink-0">
+													{#if status === 'completed'}
+														<span style="color: var(--color-palette-pink);">✅</span>
+													{:else if status === 'in-progress'}
+														<span style="color: var(--color-palette-pink);">🔄</span>
+													{:else}
+														<span style="color: var(--color-palette-light); opacity: 0.5;">⭕</span>
+													{/if}
+												</div>
+												
+												<!-- Course Info -->
+												<div class="flex-1">
+													<h5 class="font-medium text-sm mb-1" style="color: var(--color-palette-light);">
+														{item.title}
+													</h5>
+													<a href="{item.url}" target="_blank" rel="noopener noreferrer" 
+														class="text-xs hover:underline transition-colors duration-200"
+														style="color: var(--color-palette-pink); opacity: 0.8;">
+														🔗 {item.url.replace('https://', '').split('/')[0]}
+													</a>
+												</div>
+												
+												<!-- Status Badge -->
+												<span class="px-2 py-1 rounded-full text-xs font-medium flex-shrink-0"
+													style="{status === 'completed' ? 'background-color: var(--color-palette-pink); color: var(--color-palette-light);' : 
+														status === 'in-progress' ? 'background-color: rgba(255, 26, 117, 0.2); color: var(--color-palette-pink); border: 1px solid var(--color-palette-pink);' : 
+														'border: 1px solid var(--color-palette-light); color: var(--color-palette-light); background-color: transparent; opacity: 0.7;'}">
+													{status === 'completed' ? 'Done' : status === 'in-progress' ? 'Active' : 'Pending'}
+												</span>
+											</div>
+										{/each}
+									</div>
+								{/if}
+							</div>
+						{/each}
+					</div>
+				{/if}
+			</div>
+		{/each}
+	</div>
+</div>
+
+<style>
+	.course-tree {
+		max-height: 80vh;
+		overflow-y: auto;
+		scrollbar-width: thin;
+		scrollbar-color: var(--color-palette-pink) transparent;
+	}
+	
+	.course-tree::-webkit-scrollbar {
+		width: 6px;
+	}
+	
+	.course-tree::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	
+	.course-tree::-webkit-scrollbar-thumb {
+		background-color: var(--color-palette-pink);
+		border-radius: 3px;
+	}
+	
+	.phase-header:hover {
+		box-shadow: 0 4px 12px rgba(255, 26, 117, 0.2);
+	}
+	
+	.section-header:hover {
+		box-shadow: 0 2px 8px rgba(254, 254, 253, 0.1);
+	}
+	
+	.course-item:hover {
+		box-shadow: 0 2px 6px rgba(254, 254, 253, 0.05);
+		transform: translateX(4px);
+	}
+</style>
