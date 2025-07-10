@@ -253,29 +253,32 @@
 				<h3 class="text-xl font-semibold mb-4" style="color: var(--color-palette-light);">
 					{section.title}
 				</h3>
-				<div class="space-y-3">
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 					{#each section.items as item}
 						{@const status = getItemStatus(item.id)}
-						<div class="flex items-center justify-between p-4 rounded-lg border transition-all duration-200" 
+						<div class="rounded-lg border transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 flex flex-col"
 							style="background-color: rgba(254, 254, 253, 0.05); border-color: var(--color-palette-light);">
-							<div class="flex-1">
-								<h4 class="font-medium mb-1" style="color: var(--color-palette-light);">
+							<div class="p-6 flex-grow">
+								<h4 class="font-bold text-lg mb-2" style="color: var(--color-palette-light);">
 									{item.title}
 								</h4>
-								<a href="{item.url}" target="_blank" rel="noopener noreferrer" 
-									class="text-sm hover:underline transition-colors duration-200"
-									style="color: var(--color-palette-pink);">
-									{item.url}
-								</a>
+								<p class="text-sm opacity-70 mb-4 flex-grow" style="color: var(--color-palette-light);">
+									<!-- Placeholder for a course description if you add one -->
+									Click the link below to start the course.
+								</p>
 							</div>
-							<div class="flex items-center gap-3">
+							<div class="p-6 pt-0 flex items-center justify-between">
+								<a href="{item.url}" target="_blank" rel="noopener noreferrer"
+									class="text-sm font-medium py-2 px-4 rounded-md transition-colors duration-200"
+									style="background-color: var(--color-palette-pink); color: var(--color-palette-dark);">
+									Go to course
+								</a>
 								<span class="px-3 py-1 rounded-full text-xs font-medium"
 									style="{status === 'completed' ? 'background-color: var(--color-palette-pink); color: var(--color-palette-light);' : 
 										status === 'in-progress' ? 'background-color: rgba(255, 26, 117, 0.2); color: var(--color-palette-pink); border: 1px solid var(--color-palette-pink);' : 
 										'border: 1px solid var(--color-palette-light); color: var(--color-palette-light); background-color: transparent;'}">
 									{status === 'completed' ? 'Completed' : status === 'in-progress' ? 'In Progress' : 'Pending'}
 								</span>
-								<!-- Toggle button removed -->
 							</div>
 						</div>
 					{/each}
