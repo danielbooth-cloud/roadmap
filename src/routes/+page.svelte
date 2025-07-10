@@ -180,10 +180,10 @@
 	<!-- Header Section -->
 	<header class="p-8">
 		<h1 class="text-4xl font-bold mb-4" style="color: var(--color-palette-light);">
-			Comprehensive Learning Plan
+			Daniel's Learning Plan
 		</h1>
 		<p class="text-lg opacity-80 mb-6" style="color: var(--color-palette-light);">
-			Building expertise across Homelab Operations, Infantry Cloud Development, and DevOps Engineering
+			Developing deep expertise across Homelab Operations, Cloud Infrastructure, and DevOps Engineering to build, automate, and scale modern systems with hands-on precision and industry-grade practices.
 		</p>
 		
 		<!-- Overall Progress -->
@@ -207,7 +207,7 @@
 		<!-- Phase Navigation -->
 		<section class="mb-8">
 			<h2 class="text-2xl font-semibold mb-4" style="color: var(--color-palette-light);">
-				Learning Phases
+				Learning Paths
 			</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
 				{#each phases as phase}
@@ -219,7 +219,7 @@
 						on:click={() => selectedPhase = phase.id}
 					>
 						<h3 class="font-semibold mb-2" style="color: var(--color-palette-light);">
-							Phase {phase.id}: {phase.title}
+							Pathway {phase.id}: {phase.title}
 						</h3>
 						<p class="text-sm opacity-80 mb-3" style="color: var(--color-palette-light);">
 							{phase.description}
