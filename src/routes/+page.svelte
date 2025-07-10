@@ -44,7 +44,7 @@
 					title: "SysOps Fundamentals",
 					items: [
 						{ id: 'linux-admin', title: 'Linux System Administration', url: 'https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job' },
-						{ id: 'networking', title: 'Networking Concepts (TCP/IP, DNS, DHCP, VLANs)', url: 'https://www.udemy.com/course/essential-computer-networking-for-devops-cloud-and-more/' },
+						{ id: 'networking', title: 'Networking Concepts', url: 'https://www.udemy.com/course/essential-computer-networking-for-devops-cloud-and-more/' },
 						{ id: 'ccna', title: 'CCNA', url: 'https://www.udemy.com/course/ccna-complete' }
 					]
 				},
@@ -61,14 +61,14 @@
 		},
 		{
 			id: 2,
-			title: "Cloud & Infrastructure",
+			title: "Cloud Infrastructure",
 			description: "Multi-Cloud Platforms & Infrastructure Management",
 			sections: [
 				{
 					title: "Multi-Cloud Platforms",
 					items: [
 						{ id: 'aws', title: 'AWS Solutions Architect', url: 'https://www.educative.io/courses/aws-solutions-architect-associate' },
-						{ id: 'gcp', title: 'Engineering Google Cloud Platform', url: 'https://www.coursera.org/professional-certificates/cloud-engineering-gcp' },
+						{ id: 'gcp', title: 'Google Cloud Platform', url: 'https://www.coursera.org/professional-certificates/cloud-engineering-gcp' },
 						{ id: 'cloud-design', title: 'Cloud Design Principles', url: 'https://www.udemy.com/course/the-complete-cloud-computing-software-architecture-patterns' },
 						{ id: 'hybrid-cloud', title: 'Hybrid Cloud', url: 'https://www.udemy.com/course/mastering-multicloud-and-hybrid-cloud-strategy-execution/' }
 					]
@@ -92,7 +92,7 @@
 		},
 		{
 			id: 3,
-			title: "DevOps & Automation",
+			title: "Platform Engineering",
 			description: "Monitoring, Observability, and DevSecOps Practices",
 			sections: [
 				{
