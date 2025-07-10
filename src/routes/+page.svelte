@@ -62,7 +62,7 @@
 		{
 			id: 2,
 			title: "Cloud & Infrastructure",
-			description: "Multi-cloud platforms and infrastructure management",
+			description: "Multi-Cloud Platforms & Infrastructure Management",
 			sections: [
 				{
 					title: "Multi-Cloud Platforms",
@@ -83,7 +83,7 @@
 				{
 					title: "Kubernetes",
 					items: [
-						{ id: 'k8s-arch', title: 'Kubernetes Architecture and Frameworks', url: 'https://www.educative.io/courses/programming-with-kubernetes' },
+						{ id: 'k8s-arch', title: 'Kubernetes Architecture & Frameworks', url: 'https://www.educative.io/courses/programming-with-kubernetes' },
 						{ id: 'k8s-admin', title: 'Kubernetes Administration', url: 'https://kodekloud.com/courses/cka-certification-course-certified-kubernetes-administrator' },
 						{ id: 'istio', title: 'Service Mesh Concepts (Istio)', url: 'https://www.udemy.com/course/istio-hands-on-for-kubernetes' }
 					]
@@ -116,13 +116,13 @@
 		{
 			id: 4,
 			title: "Advanced Topics",
-			description: "Database Management and AI/ML Integration",
+			description: "Database Management & AI/ML Integration",
 			sections: [
 				{
 					title: "Database & Data Management",
 					items: [
 						{ id: 'redis', title: 'Redis/Valkey Administration', url: 'https://www.educative.io/courses/complete-guide-to-redis' },
-						{ id: 'nosql', title: 'NoSQL Database Design and Optimization', url: 'https://www.datacamp.com/courses/introduction-to-nosql' },
+						{ id: 'nosql', title: 'NoSQL Database Design & Optimization', url: 'https://www.datacamp.com/courses/introduction-to-nosql' },
 						{ id: 'mongodb', title: 'MongoDB', url: 'https://www.coursera.org/learn/introduction-to-mongodb' },
 						{ id: 'truenas', title: 'TrueNAS', url: 'https://www.udemy.com/course/truenas-fundamentals-for-beginners' },
 						{ id: 'vault', title: 'Secrets Management (Vault)', url: 'https://www.udemy.com/course/hashicorp-vault' }
