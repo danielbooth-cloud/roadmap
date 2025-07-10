@@ -97,4 +97,9 @@
   --color-surface-800: oklch(32.11% 0 none);
   --color-surface-900: oklch(25.2% 0 none);
   --color-surface-950: oklch(17.76% 0 none);
+  
+  /* Custom palette colors */
+  --color-palette-dark: #282C35; /* Background */
+  --color-palette-pink: #FF1A75; /* Interactive elements */
+  --color-palette-light: #FEFEFD; /* Text and content */
 }
