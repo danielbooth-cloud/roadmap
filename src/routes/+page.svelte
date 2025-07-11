@@ -4,7 +4,6 @@
 	// Set item statuses directly in these arrays by adding/removing item IDs
 	// COMPLETED ITEMS: Add item IDs here for completed courses
 	let completedItems = new Set([
-		'go-advanced'
 	]);
 	
 	// IN PROGRESS ITEMS: Add item IDs here for courses you're currently taking
@@ -53,9 +52,9 @@
 						{ id: 'ccna', title: 'CCNA', url: 'https://www.udemy.com/course/ccna-complete' }
 					],
 					certifications: [
-						{ name: 'LPIC-1', url: 'https://www.lpi.org/our-certifications/lpic-1-overview/', img: 'https://via.placeholder.com/150x80'},
-						{ name: 'LPIC-2', url: 'https://www.lpi.org/our-certifications/lpic-2-overview/', img: 'https://via.placeholder.com/150x80'},
-						{ name: 'CCNA', url: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html', img: 'https://via.placeholder.com/150x80'}
+						{ name: 'LPIC-1', url: 'https://www.lpi.org/our-certifications/lpic-1-overview/', img: 'https://images.credly.com/size/680x680/images/6bbd9761-ce78-431d-b5b7-2d1898e362d9/image.png'},
+						{ name: 'LPIC-2', url: 'https://www.lpi.org/our-certifications/lpic-2-overview/', img: 'https://images.credly.com/size/680x680/images/44eff2ce-0195-4c82-8762-d68916a2f63d/image.png'},
+						{ name: 'CCNA', url: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html', img: 'https://images.credly.com/size/680x680/images/683783d8-eaac-4c37-a14d-11bd8a36321d/ccna_600.png'}
 					]
 				},
 				{
@@ -67,8 +66,8 @@
 						{ id: 'github-actions', title: 'GitHub Actions', url: 'https://kodekloud.com/courses/github-actions' }
 					],
 					certifications: [
-						{ name: 'GitHub Actions', url: 'https://examregistration.github.com/certification/ACTIONS', img: 'https://via.placeholder.com/150x80'},
-						{ name: 'GitLab CI/CD', url: 'https://university.gitlab.com/courses/gitlab-ci-cd-certification-exam', img: 'https://via.placeholder.com/150x80'}
+						{ name: 'GitHub Actions', url: 'https://examregistration.github.com/certification/ACTIONS', img: 'https://images.credly.com/size/680x680/images/89efc3e7-842b-4790-b09b-9ea5efc71ec3/image.png'},
+						{ name: 'GitLab CI/CD', url: 'https://university.gitlab.com/courses/gitlab-ci-cd-certification-exam', img: 'https://images.credly.com/size/680x680/images/cbfb08bb-74b3-4768-81ac-93c30335cb83/image.png'}
 					]
 				}
 			]
@@ -235,7 +234,7 @@
 				</span>
 			</div>
 			<div class="w-full rounded-full h-4" style="background-color: rgba(254, 254, 253, 0.1);">
-				<div class="h-4 rounded-full transition-all duration-500" style="width: {overallProgress}%; background-color: var(--color-palette-pink);"></div>
+				<div class="h-4 rounded-full transition-all duration-500" style="width: {overallProgress}%; background-color: var(--color-palette-emerald);"></div>
 			</div>
 		</div>
 	</header>
@@ -251,11 +250,15 @@
 				{#each phases as phase}
 					{@const phaseItems = phase.sections.flatMap(section => section.items)}
 					{@const phaseProgress = getPhaseProgress(phaseItems)}
+					{@const phaseCompleted = phaseProgress === 100}
 					<button 
-						class="p-4 rounded-lg border-2 transition-all duration-200 hover:scale-105 text-left"
-						style="{selectedPhase === phase.id ? 'border-color: var(--color-palette-pink); background-color: rgba(255, 26, 117, 0.1);' : 'border-color: var(--color-palette-light); background-color: rgba(254, 254, 253, 0.05);'}"
-						on:click={() => selectedPhase = phase.id}
-					>
+					class="p-4 rounded-lg border-2 transition-all duration-200 hover:scale-105 text-left"
+					style="{selectedPhase === phase.id ? 
+					'border-color: var(--color-palette-pink); background-color: rgba(255, 26, 117, 0.1);' : 
+					phaseCompleted ? 
+					'border-color: var(--color-palette-emerald); background-color: rgba(35, 216, 161, 0.05);' :
+					'border-color: var(--color-palette-light); background-color: rgba(254, 254, 253, 0.05);'}"
+					on:click={() => selectedPhase = phase.id}>
 						<h3 class="font-semibold mb-2" style="color: var(--color-palette-light);">
 							Pathway {phase.id}: {phase.title}
 						</h3>
@@ -268,7 +271,7 @@
 								<span>{phaseProgress}%</span>
 							</div>
 							<div class="w-full rounded-full h-2" style="background-color: rgba(254, 254, 253, 0.2);">
-								<div class="h-2 rounded-full transition-all duration-300" style="width: {phaseProgress}%; background-color: var(--color-palette-pink);"></div>
+								<div class="h-2 rounded-full transition-all duration-300" style="width: {phaseProgress}%; background-color: {phaseProgress === 100 ? 'var(--color-palette-emerald)' : 'var(--color-palette-pink)'};">
 							</div>
 						</div>
 					</button>
@@ -280,7 +283,7 @@
 		{#if currentPhase}
 		<section class="mb-8">
 			<h2 class="text-2xl font-semibold mb-4" style="color: var(--color-palette-light);">
-				Phase {currentPhase.id}: {currentPhase.title}
+				Pathway {currentPhase.id}: {currentPhase.title}
 			</h2>
 			<p class="text-lg opacity-80 mb-6" style="color: var(--color-palette-light);">
 				{currentPhase.description}
@@ -288,8 +291,9 @@
 			
 			{#each currentPhase.sections as section}
 			<div class="mb-8">
-				<h3 class="text-xl font-semibold mb-4" style="color: var(--color-palette-light);">
-					{section.title}
+				<h3 class="text-xl font-semibold mb-4 border-b-2 pb-2" 
+				style="color: var(--color-palette-light); border-bottom-color: var(--color-palette-emerald);">
+				{section.title}
 				</h3>
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 					{#each section.items as item}
