@@ -4,10 +4,12 @@
 	// Set item statuses directly in these arrays by adding/removing item IDs
 	// COMPLETED ITEMS: Add item IDs here for completed courses
 	let completedItems = new Set([
+		'go-advanced'
 	]);
 	
 	// IN PROGRESS ITEMS: Add item IDs here for courses you're currently taking
 	let inProgressItems = new Set([
+		'go-fundamentals'
 	]);
 	
 	// All other items will automatically show as "Pending"
@@ -38,6 +40,9 @@
 						{ id: 'js-basics', title: 'JavaScript/TypeScript Basics', url: 'https://www.educative.io/courses/learn-html-css-javascript-from-scratch' },
 						{ id: 'typescript', title: 'TypeScript', url: 'https://www.udemy.com/course/understanding-typescript' },
 						{ id: 'tailwind', title: 'Tailwind CSS', url: 'https://www.udemy.com/course/tailwind-from-scratch' }
+					],
+					certifications: [
+						{ name: 'Go Developer Certificate', url: 'https://hyperskill.org/courses/25-go-developer', img: 'https://icon.icepanel.io/Technology/svg/Go.svg' }
 					]
 				},
 				{
@@ -46,6 +51,11 @@
 						{ id: 'linux-admin', title: 'Linux System Administration', url: 'https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job' },
 						{ id: 'networking', title: 'Networking Concepts', url: 'https://www.udemy.com/course/essential-computer-networking-for-devops-cloud-and-more/' },
 						{ id: 'ccna', title: 'CCNA', url: 'https://www.udemy.com/course/ccna-complete' }
+					],
+					certifications: [
+						{ name: 'LPIC-1', url: 'https://www.lpi.org/our-certifications/lpic-1-overview/', img: 'https://via.placeholder.com/150x80'},
+						{ name: 'LPIC-2', url: 'https://www.lpi.org/our-certifications/lpic-2-overview/', img: 'https://via.placeholder.com/150x80'},
+						{ name: 'CCNA', url: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html', img: 'https://via.placeholder.com/150x80'}
 					]
 				},
 				{
@@ -55,6 +65,10 @@
 						{ id: 'cicd', title: 'CI/CD', url: 'https://www.codecademy.com/learn/ext-courses/devsecops-in-continuous-integration-delivery-ci-cd' },
 						{ id: 'gitlab-cicd', title: 'GitLab CI/CD', url: 'https://kodekloud.com/courses/gitlab-ci-cd' },
 						{ id: 'github-actions', title: 'GitHub Actions', url: 'https://kodekloud.com/courses/github-actions' }
+					],
+					certifications: [
+						{ name: 'GitHub Actions', url: 'https://examregistration.github.com/certification/ACTIONS', img: 'https://via.placeholder.com/150x80'},
+						{ name: 'GitLab CI/CD', url: 'https://university.gitlab.com/courses/gitlab-ci-cd-certification-exam', img: 'https://via.placeholder.com/150x80'}
 					]
 				}
 			]
@@ -71,6 +85,10 @@
 						{ id: 'gcp', title: 'Google Cloud Platform', url: 'https://www.coursera.org/professional-certificates/cloud-engineering-gcp' },
 						{ id: 'cloud-design', title: 'Cloud Design Principles', url: 'https://www.udemy.com/course/the-complete-cloud-computing-software-architecture-patterns' },
 						{ id: 'hybrid-cloud', title: 'Hybrid Cloud', url: 'https://www.udemy.com/course/mastering-multicloud-and-hybrid-cloud-strategy-execution/' }
+					],
+					certifications: [
+						{ name: 'AWS Certified Solutions Architect - Associate', url: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/', img: 'https://via.placeholder.com/150x80'},
+						{ name: 'Google Cloud Engineer', url: 'https://cloud.google.com/learn/certification/cloud-engineer', img: 'https://via.placeholder.com/150x80'}
 					]
 				},
 				{
@@ -78,6 +96,9 @@
 					items: [
 						{ id: 'terraform', title: 'Terraform', url: 'https://www.udemy.com/course/terraform-authoring-and-operations-professional' },
 						{ id: 'ansible', title: 'Ansible', url: 'https://kodekloud.com/courses/ansible-for-the-absolute-beginners-course' }
+					],
+					certifications: [
+						{ name: 'HashiCorp Certified: Terraform Associate', url: 'https://www.credly.com/org/hashicorp/badge/hashicorp-certified-terraform-authoring-and-operati.1', img: 'https://via.placeholder.com/150x80'}
 					]
 				},
 				{
@@ -86,6 +107,10 @@
 						{ id: 'k8s-arch', title: 'Kubernetes Architecture & Frameworks', url: 'https://www.educative.io/courses/programming-with-kubernetes' },
 						{ id: 'k8s-admin', title: 'Kubernetes Administration', url: 'https://kodekloud.com/courses/cka-certification-course-certified-kubernetes-administrator' },
 						{ id: 'istio', title: 'Service Mesh Concepts (Istio)', url: 'https://www.udemy.com/course/istio-hands-on-for-kubernetes' }
+					],
+					certifications: [
+						{ name: 'Certified Kubernetes Administrator (CKA)', url: 'https://www.cncf.io/training/certification/cka/', img: 'https://via.placeholder.com/150x80'},
+						{ name: 'Kubernetes Cluster Lifecycle Management', url: 'https://university.platformengineering.org/kubernetes-cluster-lifecycle-management-in-platform-engineering', img: 'https://via.placeholder.com/150x80'}
 					]
 				}
 			]
@@ -101,6 +126,9 @@
 						{ id: 'grafana-lgtm', title: 'Grafana LGTM Stack', url: 'https://www.udemy.com/course/grafana-prometheus-loki-alloy-tempo' },
 						{ id: 'k8s-monitoring', title: 'Monitoring in Kubernetes', url: 'https://www.educative.io/courses/advanced-kubernetes-techniques' },
 						{ id: 'sre', title: 'Site Reliability Engineering', url: 'https://university.platformengineering.org/observability-for-platform-engineering' }
+					],
+					certifications: [
+						{ name: 'Observability for Platform Engineering', url: 'https://university.platformengineering.org/observability-for-platform-engineering', img: 'https://via.placeholder.com/150x80'}
 					]
 				},
 				{
@@ -109,6 +137,10 @@
 						{ id: 'k8s-devsecops', title: 'Kubernetes DevOps & Security', url: 'https://kodekloud.com/courses/devsecops' },
 						{ id: 'agile', title: 'Agile', url: 'https://www.coursera.org/learn/agile-atlassian-jira' },
 						{ id: 'microservices', title: 'Microservices', url: 'https://www.udemy.com/course/working-with-microservices-in-go' }
+					],
+					certifications: [
+						{ name: 'Platform Engineering Leadership', url: 'https://university.platformengineering.org/platform-engineering-leadership', img: 'https://via.placeholder.com/150x80'},
+						{ name: 'PMI Agile Certified Practitioner (PMI-ACP)', url: 'https://www.pmi.org/certifications/agile-acp', img: 'https://via.placeholder.com/150x80'}
 					]
 				}
 			]
@@ -126,6 +158,9 @@
 						{ id: 'mongodb', title: 'MongoDB', url: 'https://www.coursera.org/learn/introduction-to-mongodb' },
 						{ id: 'truenas', title: 'TrueNAS', url: 'https://www.udemy.com/course/truenas-fundamentals-for-beginners' },
 						{ id: 'vault', title: 'Secrets Management (Vault)', url: 'https://www.udemy.com/course/hashicorp-vault' }
+					],
+					certifications: [
+						{ name: 'HashiCorp Certified: Vault Associate', url: 'https://www.credly.com/org/hashicorp/badge/hashicorp-certified-vault-associate-003', img: 'https://via.placeholder.com/150x80'}
 					]
 				},
 				{
@@ -157,6 +192,9 @@
 						{ id: 'ux', title: 'UI/UX best practices', url: 'https://www.udemy.com/course/ultimate-guide-to-ux/' },
 						{ id: 'api-design', title: 'API design', url: 'https://www.pluralsight.com/paths/api-design-and-development' },
 						{ id: 'microservices-arch', title: 'Microservices architecture', url: 'https://www.udemy.com/course/the-complete-microservices-event-driven-architecture/' }
+					],
+					certifications: [
+						{ name: 'Kong Gateway Certified Associate', url: 'https://konghq.com/academy/exam-preparation', img: 'https://via.placeholder.com/150x80'}
 					]
 				},
 				{
@@ -264,7 +302,7 @@
 								</h4>
 								<p class="text-sm opacity-70 mb-4 flex-grow" style="color: var(--color-palette-light);">
 									<!-- Placeholder for a course description if you add one -->
-									Click the link below to start the course.
+									Find the link below to the course.
 								</p>
 							</div>
 							<div class="p-6 pt-0 flex items-center justify-between">
@@ -274,8 +312,8 @@
 									Go to course
 								</a>
 								<span class="px-3 py-1 rounded-full text-xs font-medium"
-									style="{status === 'completed' ? 'background-color: var(--color-palette-pink); color: var(--color-palette-light);' : 
-										status === 'in-progress' ? 'background-color: rgba(255, 26, 117, 0.2); color: var(--color-palette-pink); border: 1px solid var(--color-palette-pink);' : 
+									style="{status === 'completed' ? 'background-color: var(--color-palette-faded-emerald); color: var(--color-palette-emerald); border: 1px solid var(--color-palette-emerald);' : 
+										status === 'in-progress' ? 'background-color: var(--color-palette-faded-pink); color: var(--color-palette-pink); border: 1px solid var(--color-palette-pink);' : 
 										'border: 1px solid var(--color-palette-light); color: var(--color-palette-light); background-color: transparent;'}">
 									{status === 'completed' ? 'Completed' : status === 'in-progress' ? 'In Progress' : 'Pending'}
 								</span>
@@ -283,6 +321,21 @@
 						</div>
 					{/each}
 				</div>
+
+				{#if section.certifications && section.certifications.length > 0}
+					<div class="mt-6">
+						<h4 class="text-lg font-semibold mb-3" style="color: var(--color-palette-light);">Certifications</h4>
+						<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+							{#each section.certifications as cert}
+								<a href="{cert.url}" target="_blank" rel="noopener noreferrer" class="block p-4 rounded-lg border transition-all duration-200 hover:bg-white/10"
+									style="border-color: var(--color-palette-light);">
+									<img src="{cert.img}" alt="{cert.name}" class="h-20 mx-auto mb-3 object-contain">
+									<p class="text-center text-sm font-medium" style="color: var(--color-palette-light);">{cert.name}</p>
+								</a>
+							{/each}
+						</div>
+					</div>
+				{/if}
 			</div>
 			{/each}
 		</section>
