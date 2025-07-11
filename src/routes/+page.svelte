@@ -11,11 +11,21 @@
 		'go-fundamentals'
 	]);
 	
+	// COMPLETED CERTIFICATIONS: Add certification names here for completed certs
+	let completedCertifications = new Set([
+		// Example: 'Platform Engineering Leadership'
+	]);
+	
 	// All other items will automatically show as "Pending"
 
 	function getItemStatus(itemId) {
 		if (completedItems.has(itemId)) return 'completed';
 		if (inProgressItems.has(itemId)) return 'in-progress';
+		return 'pending';
+	}
+	
+	function getCertificationStatus(certName) {
+		if (completedCertifications.has(certName)) return 'completed';
 		return 'pending';
 	}
 
@@ -331,11 +341,20 @@
 						<h4 class="text-lg font-semibold mb-3" style="color: var(--color-palette-light);">Certifications</h4>
 						<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 							{#each section.certifications as cert}
-								<a href="{cert.url}" target="_blank" rel="noopener noreferrer" class="block p-4 rounded-lg border transition-all duration-200 hover:bg-white/10"
-									style="border-color: var(--color-palette-light);">
-									<img src="{cert.img}" alt="{cert.name}" class="h-20 mx-auto mb-3 object-contain">
-									<p class="text-center text-sm font-medium" style="color: var(--color-palette-light);">{cert.name}</p>
-								</a>
+								{@const certStatus = getCertificationStatus(cert.name)}
+								<div class="relative">
+									<a href="{cert.url}" target="_blank" rel="noopener noreferrer" class="block p-4 rounded-lg border transition-all duration-200 hover:bg-white/10"
+										style="border-color: var(--color-palette-light);">
+										<img src="{cert.img}" alt="{cert.name}" class="h-20 mx-auto mb-3 object-contain">
+										<p class="text-center text-sm font-medium" style="color: var(--color-palette-light);">{cert.name}</p>
+									</a>
+									<span class="absolute top-2 right-2 px-2 py-1 rounded-full text-xs font-medium"
+										style="{certStatus === 'completed' ? 'background-color: var(--color-palette-faded-emerald); color: var(--color-palette-emerald); border: 1px solid var(--color-palette-emerald);' : 
+											certStatus === 'in-progress' ? 'background-color: var(--color-palette-faded-pink); color: var(--color-palette-pink); border: 1px solid var(--color-palette-pink);' : 
+											'border: 1px solid var(--color-palette-light); color: var(--color-palette-light); background-color: transparent;'}">
+										{certStatus === 'completed' ? 'Completed' : certStatus === 'in-progress' ? 'In Progress' : 'Pending'}
+									</span>
+								</div>
 							{/each}
 						</div>
 					</div>
