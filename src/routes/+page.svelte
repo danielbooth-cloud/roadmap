@@ -52,7 +52,7 @@
 						{ id: 'ccna', title: 'CCNA', url: 'https://www.udemy.com/course/ccna-complete' }
 					],
 					certifications: [
-						{ name: 'LPIC-1', url: 'https://www.lpi.org/our-certifications/lpic-1-overview/', img: 'https://images.credly.com/size/680x680/images/6bbd9761-ce78-431d-b5b7-2d1898e362d9/image.png'},
+						{ name: 'LPIC-1', url: 'https://www.lpi.org/our-certifications/lpic-1-overview/', img: '/LPIC-1.png'},
 						{ name: 'LPIC-2', url: 'https://www.lpi.org/our-certifications/lpic-2-overview/', img: 'https://images.credly.com/size/680x680/images/44eff2ce-0195-4c82-8762-d68916a2f63d/image.png'},
 						{ name: 'CCNA', url: 'https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html', img: 'https://images.credly.com/size/680x680/images/683783d8-eaac-4c37-a14d-11bd8a36321d/ccna_600.png'}
 					]
@@ -86,8 +86,8 @@
 						{ id: 'hybrid-cloud', title: 'Hybrid Cloud', url: 'https://www.udemy.com/course/mastering-multicloud-and-hybrid-cloud-strategy-execution/' }
 					],
 					certifications: [
-						{ name: 'AWS Certified Solutions Architect - Associate', url: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/', img: 'https://via.placeholder.com/150x80'},
-						{ name: 'Google Cloud Engineer', url: 'https://cloud.google.com/learn/certification/cloud-engineer', img: 'https://via.placeholder.com/150x80'}
+						{ name: 'AWS Certified Solutions Architect - Associate', url: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/', img: 'https://miro.medium.com/v2/resize:fit:600/1*E6tqmlvuylHL8SMlOYUqhQ.png'},
+						{ name: 'GCP Associate Cloud Engineer', url: 'https://cloud.google.com/learn/certification/cloud-engineer', img: 'https://miro.medium.com/v2/resize:fit:324/1*T59fnCvp71WqNeuytWGorA.png'}
 					]
 				},
 				{
@@ -97,7 +97,7 @@
 						{ id: 'ansible', title: 'Ansible', url: 'https://kodekloud.com/courses/ansible-for-the-absolute-beginners-course' }
 					],
 					certifications: [
-						{ name: 'HashiCorp Certified: Terraform Associate', url: 'https://www.credly.com/org/hashicorp/badge/hashicorp-certified-terraform-authoring-and-operati.1', img: 'https://via.placeholder.com/150x80'}
+						{ name: 'HashiCorp Certified: Terraform Authoring and Operations Professional', url: 'https://www.credly.com/org/hashicorp/badge/hashicorp-certified-terraform-authoring-and-operati.1', img: 'https://images.credly.com/size/340x340/images/246f2175-5dc3-4c17-ad9c-cba39f2deef6/blob'}
 					]
 				},
 				{
@@ -108,8 +108,8 @@
 						{ id: 'istio', title: 'Service Mesh Concepts (Istio)', url: 'https://www.udemy.com/course/istio-hands-on-for-kubernetes' }
 					],
 					certifications: [
-						{ name: 'Certified Kubernetes Administrator (CKA)', url: 'https://www.cncf.io/training/certification/cka/', img: 'https://via.placeholder.com/150x80'},
-						{ name: 'Kubernetes Cluster Lifecycle Management', url: 'https://university.platformengineering.org/kubernetes-cluster-lifecycle-management-in-platform-engineering', img: 'https://via.placeholder.com/150x80'}
+						{ name: 'Certified Kubernetes Administrator (CKA)', url: 'https://www.cncf.io/training/certification/cka/', img: 'https://images.credly.com/size/340x340/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png'},
+						{ name: 'Kubernetes Cluster Lifecycle Management', url: 'https://university.platformengineering.org/kubernetes-cluster-lifecycle-management-in-platform-engineering', img: 'https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2F5450glz3ab58e5up7yv83exmo%2Fpublic%2F1750418609%2Fpe-badge.1750418608783.png'}
 					]
 				}
 			]
@@ -127,7 +127,7 @@
 						{ id: 'sre', title: 'Site Reliability Engineering', url: 'https://university.platformengineering.org/observability-for-platform-engineering' }
 					],
 					certifications: [
-						{ name: 'Observability for Platform Engineering', url: 'https://university.platformengineering.org/observability-for-platform-engineering', img: 'https://via.placeholder.com/150x80'}
+						{ name: 'Observability for Platform Engineering', url: 'https://university.platformengineering.org/observability-for-platform-engineering', img: 'https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2F5450glz3ab58e5up7yv83exmo%2Fpublic%2F1750425033%2Fpe-badge+%282%29.1750425033270.png'}
 					]
 				},
 				{
@@ -138,8 +138,8 @@
 						{ id: 'microservices', title: 'Microservices', url: 'https://www.udemy.com/course/working-with-microservices-in-go' }
 					],
 					certifications: [
-						{ name: 'Platform Engineering Leadership', url: 'https://university.platformengineering.org/platform-engineering-leadership', img: 'https://via.placeholder.com/150x80'},
-						{ name: 'PMI Agile Certified Practitioner (PMI-ACP)', url: 'https://www.pmi.org/certifications/agile-acp', img: 'https://via.placeholder.com/150x80'}
+						{ name: 'Platform Engineering Leadership', url: 'https://university.platformengineering.org/platform-engineering-leadership', img: '/leadership-badge.png'},
+						{ name: 'PMI Agile Certified Practitioner (PMI-ACP)', url: 'https://www.pmi.org/certifications/agile-acp', img: 'https://images.credly.com/size/340x340/images/884f1605-f439-4b0d-ba7c-76a921266d45/blob'}
 					]
 				}
 			]
@@ -159,7 +159,7 @@
 						{ id: 'vault', title: 'Secrets Management (Vault)', url: 'https://www.udemy.com/course/hashicorp-vault' }
 					],
 					certifications: [
-						{ name: 'HashiCorp Certified: Vault Associate', url: 'https://www.credly.com/org/hashicorp/badge/hashicorp-certified-vault-associate-003', img: 'https://via.placeholder.com/150x80'}
+						{ name: 'HashiCorp Certified: Vault Associate', url: 'https://www.credly.com/org/hashicorp/badge/hashicorp-certified-vault-associate-003', img: 'https://images.credly.com/size/340x340/images/db3ed794-8b04-48c0-a49e-3e1f64e78b55/blob'}
 					]
 				},
 				{
@@ -193,7 +193,7 @@
 						{ id: 'microservices-arch', title: 'Microservices architecture', url: 'https://www.udemy.com/course/the-complete-microservices-event-driven-architecture/' }
 					],
 					certifications: [
-						{ name: 'Kong Gateway Certified Associate', url: 'https://konghq.com/academy/exam-preparation', img: 'https://via.placeholder.com/150x80'}
+						{ name: 'Kong Gateway Certified Associate', url: 'https://konghq.com/academy/exam-preparation', img: 'https://images.credly.com/images/dc659664-82e7-4b14-aee6-60130f28eb64/image.png'}
 					]
 				},
 				{
