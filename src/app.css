@@ -14,4 +14,6 @@
   --color-palette-emerald: #23D8A1; /* Secondary Accent & Highlights */   
   --color-palette-faded-emerald: #23D8A133;
   --color-palette-light: #FEFEFD; /* Text and Content */
+  --color-palette-faded-slate: #5C637040; /* Floating Backgrounds */
+  --color-palette-faded-purple: #1a162575; /* Background for Panels */
 }

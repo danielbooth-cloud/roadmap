@@ -366,9 +366,9 @@
 		{/if}
 
 		<!-- Footer Section -->
-		<footer class="mt-12 pt-8 border-t text-center" style="border-color: var(--color-palette-light);">
+		<footer class="mt-12 pt-8 border-t text-center" style="border-color: var(--color-palette-faded-slate);">
 			<p class="opacity-80" style="color: var(--color-palette-light);">
-				Daniel's Learning Roadmap • Built with SvelteKit
+				Daniel's Learning Roadmap • Built with SvelteKit & Tailwind CSS
 			</p>
 		</footer>
 	</main>
