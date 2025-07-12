@@ -243,7 +243,7 @@
 					</div>
 				</div>
 				<p class="text-2xl font-light leading-relaxed max-w-4xl">
-					Developing deep expertise across Homelab Operations, Cloud Infrastructure, and DevOps Engineering to build, automate, and scale modern systems with hands-on precision and industry-grade practices.
+					Developing deep expertise across Cloud Infrastructure, and DevOps Engineering to build, automate, and scale modern systems with hands-on precision and industry-grade practices.
 				</p>
 			</div>
 		</div>
@@ -394,30 +394,32 @@
 
 				{#if section.certifications && section.certifications.length > 0}
 					<div class="mt-10">
-						<div class="flex items-center gap-4 mb-6">
+						<div class="flex items-center justify-center gap-4 mb-6">
 							<div class="w-10 h-10 bg-[var(--color-palette-pink)] rounded-xl flex items-center justify-center shadow-lg">
 								<span class="text-xl">🏆</span>
 							</div>
-							<div>
+							<div class="text-center">
 								<h4 class="text-2xl font-bold text-[var(--color-palette-pink)]">Certifications</h4>
-								<div class="w-12 h-0.5 bg-[var(--color-palette-pink)] mt-1"></div>
+								<div class="w-12 h-0.5 bg-[var(--color-palette-pink)] mt-1 mx-auto"></div>
 							</div>
 						</div>
-						<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+						<div class="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
 							{#each section.certifications as cert, i}
 								{@const certStatus = getCertificationStatus(cert.name)}
-								<div class="relative group">
+								<div class="relative group w-48 flex-shrink-0">
 									<a href="{cert.url}" target="_blank" rel="noopener noreferrer" 
-										class="block bg-[var(--color-palette-faded-slate)] border-2 border-[var(--color-palette-pink)] p-6 rounded-2xl shadow-lg transform hover:scale-105 hover:-translate-y-2 transition-all duration-400 cursor-pointer"
+										class="block bg-[var(--color-palette-faded-slate)] border-2 border-[var(--color-palette-pink)] p-6 rounded-2xl shadow-lg transform hover:scale-105 hover:-translate-y-2 transition-all duration-400 cursor-pointer h-full"
 										style="transition-delay: {i * 75}ms">
-										<img src="{cert.img}" alt="{cert.name}" class="h-20 mx-auto mb-4 object-contain group-hover:scale-110 transition-transform duration-300">
-										<p class="text-center text-sm font-bold" style="color: var(--color-palette-light);">{cert.name}</p>
+										<div class="flex flex-col items-center justify-center h-full min-h-[140px]">
+											<img src="{cert.img}" alt="{cert.name}" class="h-16 w-16 object-contain group-hover:scale-110 transition-transform duration-300 mb-4">
+											<p class="text-center text-sm font-bold leading-tight" style="color: var(--color-palette-light);">{cert.name}</p>
+										</div>
 									</a>
-									<span class="absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+									<span class="absolute top-3 right-3 px-2 py-1 rounded-full text-xs font-bold shadow-lg"
 										style="{certStatus === 'completed' ? 'background-color: var(--color-palette-faded-emerald); color: var(--color-palette-emerald); border: 2px solid var(--color-palette-emerald);' : 
 											certStatus === 'in-progress' ? 'background-color: var(--color-palette-faded-pink); color: var(--color-palette-pink); border: 2px solid var(--color-palette-pink);' : 
 											'border: 2px solid var(--color-palette-light); color: var(--color-palette-light); background-color: transparent;'}">
-										{certStatus === 'completed' ? 'Completed' : certStatus === 'in-progress' ? 'In Progress' : 'Pending'}
+										{certStatus === 'completed' ? '✅' : certStatus === 'in-progress' ? '⏳' : '❌'}
 									</span>
 								</div>
 							{/each}
