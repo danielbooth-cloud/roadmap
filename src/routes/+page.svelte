@@ -145,7 +145,8 @@
 					items: [
 						{ id: 'k8s-devsecops', title: 'Kubernetes DevOps & Security', url: 'https://kodekloud.com/courses/devsecops' },
 						{ id: 'agile', title: 'Agile', url: 'https://www.coursera.org/learn/agile-atlassian-jira' },
-						{ id: 'microservices', title: 'Microservices', url: 'https://www.udemy.com/course/working-with-microservices-in-go' }
+						{ id: 'microservices', title: 'Microservices', url: 'https://www.udemy.com/course/working-with-microservices-in-go' },
+						{ id: 'test-driven-development', title: 'Test-driven Development (TDD)', url: 'https://www.udemy.com/course/test-first-programming' }
 					],
 					certifications: [
 						{ name: 'Platform Engineering Leadership', url: 'https://university.platformengineering.org/platform-engineering-leadership', img: '/leadership-badge.png'},
