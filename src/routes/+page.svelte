@@ -1,5 +1,5 @@
 <script>
-	let selectedPhase = 1;
+	let selectedPhase = $state(1);
 	
 	// Set item statuses directly in these arrays by adding/removing item IDs
 	// COMPLETED ITEMS: Add item IDs here for completed courses
@@ -219,9 +219,9 @@
 		}
 	];
 
-	$: currentPhase = phases.find(p => p.id === selectedPhase);
-	$: allItems = phases.flatMap(phase => phase.sections.flatMap(section => section.items));
-	$: overallProgress = Math.round((completedItems.size / allItems.length) * 100);
+	const currentPhase = $derived(phases.find(p => p.id === selectedPhase));
+	const allItems = $derived(phases.flatMap(phase => phase.sections.flatMap(section => section.items)));
+	const overallProgress = $derived(Math.round((completedItems.size / allItems.length) * 100));
 </script>
 
 <div class="min-h-screen" style="background-color: var(--color-palette-dark);">
@@ -269,7 +269,7 @@
 					phaseCompleted ? 
 					'border-color: var(--color-palette-emerald); background-color: rgba(35, 216, 161, 0.05);' :
 					'border-color: var(--color-palette-light); background-color: rgba(254, 254, 253, 0.05);'}"
-					on:click={() => selectedPhase = phase.id}>
+					onclick={() => selectedPhase = phase.id}>
 						<h3 class="font-semibold mb-2" style="color: var(--color-palette-light);">
 							Pathway {phase.id}: {phase.title}
 						</h3>
@@ -282,7 +282,7 @@
 								<span>{phaseProgress}%</span>
 							</div>
 							<div class="w-full rounded-full h-2" style="background-color: rgba(254, 254, 253, 0.2);">
-								<div class="h-2 rounded-full transition-all duration-300" style="width: {phaseProgress}%; background-color: {phaseProgress === 100 ? 'var(--color-palette-emerald)' : 'var(--color-palette-pink)'};">
+							<div class="h-2 rounded-full transition-all duration-300" style="width: {phaseProgress}%; background-color: {phaseProgress === 100 ? 'var(--color-palette-emerald)' : 'var(--color-palette-pink)'}"></div>
 							</div>
 						</div>
 					</button>
