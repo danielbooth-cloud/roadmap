@@ -229,7 +229,7 @@
 	<!-- Header Section -->
 	<header class="p-8">
 		<!-- Hero Section with enhanced styling -->
-		<div class="bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-pink)] text-[var(--color-palette-light)] p-12 rounded-3xl shadow-2xl transform hover:scale-[1.005] transition-all duration-500 relative overflow-hidden mb-8">
+		<div class="bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-pink)] text-[var(--color-palette-light)] p-8 rounded-3xl shadow-2xl transform hover:scale-[1.005] transition-all duration-500 relative overflow-hidden mb-8">
 			<div class="absolute top-4 right-4 w-16 h-16 bg-[var(--color-palette-faded-pink)] rounded-full opacity-60"></div>
 			<div class="absolute bottom-4 left-4 w-12 h-12 bg-[var(--color-palette-faded-emerald)] rounded-full opacity-40"></div>
 			<div class="relative z-10">
@@ -249,7 +249,7 @@
 		</div>
 		
 		<!-- Overall Progress with enhanced styling -->
-		<div class="bg-[var(--color-palette-faded-purple)] border-2 border-[var(--color-palette-faded-slate)] p-8 rounded-2xl shadow-xl hover:border-[var(--color-palette-emerald)] transition-all duration-500">
+		<div class="bg-[var(--color-palette-faded-purple)] border-2 border-[var(--color-palette-faded-slate)] p-6 rounded-2xl shadow-xl hover:border-[var(--color-palette-emerald)] transition-all duration-500">
 			<div class="flex items-center gap-3 mb-4">
 				<div class="w-3 h-3 bg-[var(--color-palette-emerald)] rounded-full"></div>
 				<h2 class="text-2xl font-bold text-[var(--color-palette-light)]">Overall Progress</h2>
