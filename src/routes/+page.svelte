@@ -74,7 +74,7 @@
 					title: "SysOps Fundamentals",
 				items: [
 					{ id: 'linux-admin', title: 'Linux System Administration', description: 'Master Linux server management, shell scripting, and system security.', url: 'https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linux.svg' },
-					{ id: 'networking', title: 'Networking Concepts', description: 'Essential networking protocols, routing, and network troubleshooting.', url: 'https://www.udemy.com/course/essential-computer-networking-for-devops-cloud-and-more/', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/internetexplorer.svg' },
+					{ id: 'networking', title: 'Networking Concepts', description: 'Essential networking protocols, routing, and network troubleshooting.', url: 'https://www.udemy.com/course/essential-computer-networking-for-devops-cloud-and-more/', icon: 'https://www.svgrepo.com/show/111233/network.svg' },
 					{ id: 'ccna', title: 'CCNA', description: 'Cisco networking fundamentals, switching, routing, and network security.', url: 'https://www.udemy.com/course/ccna-complete', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/cisco.svg' }
 				]
 				},
