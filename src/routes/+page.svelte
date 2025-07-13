@@ -34,6 +34,25 @@
 		return Math.round((completed / phaseItems.length) * 100);
 	}
 
+	function getSectionIcon(sectionTitle) {
+		const iconMap = {
+			'Core Programming': '💻',
+			'SysOps Fundamentals': '⚙️',
+			'CI/CD & Version Control': '🔄',
+			'Multi-Cloud Platforms': '☁️',
+			'Infrastructure as Code': '🔧',
+			'Container Orchestration': '🐳',
+			'Monitoring & Observability': '📊',
+			'DevSecOps & Agile': '🔒',
+			'Database & Data Management': '🗄️',
+			'AI/ML Integration': '🤖',
+			'Further Programming': '⚡',
+			'Architecture & Design': '🎨',
+			'AdTech': '📈'
+		};
+		return iconMap[sectionTitle] || '📚';
+	}
+
 	// Learning plan data
 	const phases = [
 		{
@@ -339,7 +358,7 @@
 			<div class="mb-12">
 				<div class="flex items-center gap-4 mb-8">
 					<div class="w-12 h-12 bg-[var(--color-palette-emerald)] rounded-2xl flex items-center justify-center shadow-lg">
-						<span class="text-2xl">📚</span>
+						<span class="text-2xl">{getSectionIcon(section.title)}</span>
 					</div>
 					<div>
 						<h3 class="text-3xl font-bold text-[var(--color-palette-emerald)]">{section.title}</h3>
