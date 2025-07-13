@@ -44,11 +44,11 @@
 				{
 					title: "Core Programming",
 				items: [
-					{ id: 'go-fundamentals', title: 'Go Programming Fundamentals', url: 'https://hyperskill.org/courses/81-introduction-to-go', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/go.svg' },
-					{ id: 'go-advanced', title: 'Advanced Go', url: 'https://hyperskill.org/courses/25-go-developer', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/go.svg' },
-					{ id: 'js-basics', title: 'JavaScript/TypeScript Basics', url: 'https://www.educative.io/courses/learn-html-css-javascript-from-scratch', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/javascript.svg' },
-					{ id: 'typescript', title: 'TypeScript', url: 'https://www.udemy.com/course/understanding-typescript', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/typescript.svg' },
-					{ id: 'tailwind', title: 'Tailwind CSS', url: 'https://www.udemy.com/course/tailwind-from-scratch', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tailwindcss.svg' }
+					{ id: 'go-fundamentals', title: 'Go Programming Fundamentals', description: 'Learn Go syntax, concurrency, and build robust backend applications.', url: 'https://hyperskill.org/courses/81-introduction-to-go', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/go.svg' },
+					{ id: 'go-advanced', title: 'Advanced Go', description: 'Master advanced Go patterns, performance optimization, and microservices.', url: 'https://hyperskill.org/courses/25-go-developer', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/go.svg' },
+					{ id: 'js-basics', title: 'JavaScript/TypeScript Basics', description: 'Foundation in modern JavaScript and TypeScript for web development.', url: 'https://www.educative.io/courses/learn-html-css-javascript-from-scratch', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/javascript.svg' },
+					{ id: 'typescript', title: 'TypeScript', description: 'Type-safe JavaScript development with advanced TypeScript features.', url: 'https://www.udemy.com/course/understanding-typescript', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/typescript.svg' },
+					{ id: 'tailwind', title: 'Tailwind CSS', description: 'Utility-first CSS framework for rapid UI development.', url: 'https://www.udemy.com/course/tailwind-from-scratch', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tailwindcss.svg' }
 				],
 					certifications: [
 						{ name: 'Go Developer Certificate', url: 'https://hyperskill.org/courses/25-go-developer', img: 'https://icon.icepanel.io/Technology/svg/Go.svg' }
@@ -57,9 +57,9 @@
 				{
 					title: "SysOps Fundamentals",
 				items: [
-					{ id: 'linux-admin', title: 'Linux System Administration', url: 'https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linux.svg' },
-					{ id: 'networking', title: 'Networking Concepts', url: 'https://www.udemy.com/course/essential-computer-networking-for-devops-cloud-and-more/', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/internetexplorer.svg' },
-					{ id: 'ccna', title: 'CCNA', url: 'https://www.udemy.com/course/ccna-complete', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/cisco.svg' }
+					{ id: 'linux-admin', title: 'Linux System Administration', description: 'Master Linux server management, shell scripting, and system security.', url: 'https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linux.svg' },
+					{ id: 'networking', title: 'Networking Concepts', description: 'Essential networking protocols, routing, and network troubleshooting.', url: 'https://www.udemy.com/course/essential-computer-networking-for-devops-cloud-and-more/', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/internetexplorer.svg' },
+					{ id: 'ccna', title: 'CCNA', description: 'Cisco networking fundamentals, switching, routing, and network security.', url: 'https://www.udemy.com/course/ccna-complete', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/cisco.svg' }
 				],
 					certifications: [
 						{ name: 'LPIC-1', url: 'https://www.lpi.org/our-certifications/lpic-1-overview/', img: '/LPIC-1.png'},
@@ -70,10 +70,10 @@
 				{
 					title: "CI/CD & Version Control",
 				items: [
-					{ id: 'git-advanced', title: 'Git Advanced Workflows', url: 'https://www.datacamp.com/courses/advanced-git', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/git.svg' },
-					{ id: 'cicd', title: 'CI/CD', url: 'https://www.codecademy.com/learn/ext-courses/devsecops-in-continuous-integration-delivery-ci-cd', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/githubactions.svg' },
-					{ id: 'gitlab-cicd', title: 'GitLab CI/CD', url: 'https://kodekloud.com/courses/gitlab-ci-cd', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/gitlab.svg' },
-					{ id: 'github-actions', title: 'GitHub Actions', url: 'https://kodekloud.com/courses/github-actions', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg' }
+					{ id: 'git-advanced', title: 'Git Advanced Workflows', description: 'Advanced Git branching, merging strategies, and collaborative workflows.', url: 'https://www.datacamp.com/courses/advanced-git', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/git.svg' },
+					{ id: 'cicd', title: 'CI/CD', description: 'Continuous integration and deployment pipelines for automated software delivery.', url: 'https://www.codecademy.com/learn/ext-courses/devsecops-in-continuous-integration-delivery-ci-cd', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/githubactions.svg' },
+					{ id: 'gitlab-cicd', title: 'GitLab CI/CD', description: 'GitLab pipelines, runners, and DevOps automation workflows.', url: 'https://kodekloud.com/courses/gitlab-ci-cd', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/gitlab.svg' },
+					{ id: 'github-actions', title: 'GitHub Actions', description: 'Automate workflows with GitHub Actions for testing and deployment.', url: 'https://kodekloud.com/courses/github-actions', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg' }
 				],
 					certifications: [
 						{ name: 'GitHub Actions', url: 'https://examregistration.github.com/certification/ACTIONS', img: 'https://images.credly.com/size/680x680/images/89efc3e7-842b-4790-b09b-9ea5efc71ec3/image.png'},
@@ -90,10 +90,10 @@
 				{
 					title: "Multi-Cloud Platforms",
 				items: [
-					{ id: 'aws', title: 'AWS Solutions Architect', url: 'https://www.educative.io/courses/aws-solutions-architect-associate', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' },
-					{ id: 'gcp', title: 'Google Cloud Platform', url: 'https://www.coursera.org/professional-certificates/cloud-engineering-gcp', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/googlecloud.svg' },
-					{ id: 'cloud-design', title: 'Cloud Design Principles', url: 'https://www.udemy.com/course/the-complete-cloud-computing-software-architecture-patterns', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/materialdesign.svg' },
-					{ id: 'hybrid-cloud', title: 'Hybrid Cloud', url: 'https://www.udemy.com/course/mastering-multicloud-and-hybrid-cloud-strategy-execution/', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/icloud.svg' }
+					{ id: 'aws', title: 'AWS Solutions Architect', description: 'Design scalable, secure AWS cloud architectures and services.', url: 'https://www.educative.io/courses/aws-solutions-architect-associate', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' },
+					{ id: 'gcp', title: 'Google Cloud Platform', description: 'Master Google Cloud services, compute, storage, and networking.', url: 'https://www.coursera.org/professional-certificates/cloud-engineering-gcp', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/googlecloud.svg' },
+					{ id: 'cloud-design', title: 'Cloud Design Principles', description: 'Learn cloud architecture patterns, scalability, and best practices.', url: 'https://www.udemy.com/course/the-complete-cloud-computing-software-architecture-patterns', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/materialdesign.svg' },
+					{ id: 'hybrid-cloud', title: 'Hybrid Cloud', description: 'Multi-cloud strategies and hybrid infrastructure management.', url: 'https://www.udemy.com/course/mastering-multicloud-and-hybrid-cloud-strategy-execution/', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/icloud.svg' }
 				],
 					certifications: [
 						{ name: 'AWS Certified Solutions Architect - Associate', url: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/', img: 'https://miro.medium.com/v2/resize:fit:600/1*E6tqmlvuylHL8SMlOYUqhQ.png'},
@@ -103,8 +103,8 @@
 				{
 					title: "Infrastructure as Code",
 				items: [
-					{ id: 'terraform', title: 'Terraform', url: 'https://www.udemy.com/course/terraform-authoring-and-operations-professional', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/terraform.svg' },
-					{ id: 'ansible', title: 'Ansible', url: 'https://kodekloud.com/courses/ansible-for-the-absolute-beginners-course', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/ansible.svg' }
+					{ id: 'terraform', title: 'Terraform', description: 'Infrastructure as Code with Terraform for cloud provisioning.', url: 'https://www.udemy.com/course/terraform-authoring-and-operations-professional', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/terraform.svg' },
+					{ id: 'ansible', title: 'Ansible', description: 'Configuration management and automation with Ansible playbooks.', url: 'https://kodekloud.com/courses/ansible-for-the-absolute-beginners-course', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/ansible.svg' }
 				],
 					certifications: [
 						{ name: 'HashiCorp Certified: Terraform Authoring and Operations Professional', url: 'https://www.credly.com/org/hashicorp/badge/hashicorp-certified-terraform-authoring-and-operati.1', img: 'https://images.credly.com/size/340x340/images/246f2175-5dc3-4c17-ad9c-cba39f2deef6/blob'}
@@ -113,10 +113,9 @@
 				{
 					title: "Container Orchestration",
 					items: [
-					{ id: 'docker', title: 'Docker', url: 'https://kodekloud.com/courses/docker-for-the-absolute-beginner', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/docker.svg' },
-					{ id: 'kubernetes', title: 'Kubernetes', url: 'https://kodekloud.com/courses/kubernetes-for-the-absolute-beginners-hands-on', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/kubernetes.svg' },
-					{ id: 'k8s-admin', title: 'Kubernetes Administration', url: 'https://kodekloud.com/courses/certified-kubernetes-administrator-cka', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/kubernetes.svg' },
-					{ id: 'helm', title: 'Helm', url: 'https://kodekloud.com/courses/helm-for-beginners', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/helm.svg' }
+					{ id: 'kubernetes', title: 'Kubernetes', description: 'Container orchestration with Kubernetes clusters and workloads.', url: 'https://kodekloud.com/courses/kubernetes-for-the-absolute-beginners-hands-on', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/kubernetes.svg' },
+					{ id: 'k8s-admin', title: 'Kubernetes Administration', description: 'Advanced Kubernetes cluster management and troubleshooting.', url: 'https://kodekloud.com/courses/certified-kubernetes-administrator-cka', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/kubernetes.svg' },
+					{ id: 'helm', title: 'Helm', description: 'Kubernetes package management with Helm charts and releases.', url: 'https://www.udemy.com/course/definitive-helm-course-beginner-master', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/helm.svg' }
 				],
 					certifications: [
 						{ name: 'Certified Kubernetes Administrator (CKA)', url: 'https://www.cncf.io/training/certification/cka/', img: 'https://images.credly.com/size/340x340/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png'},
@@ -133,9 +132,9 @@
 				{
 					title: "Monitoring & Observability",
 				items: [
-					{ id: 'grafana-lgtm', title: 'Grafana LGTM Stack', url: 'https://www.udemy.com/course/grafana-prometheus-loki-alloy-tempo', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/grafana.svg' },
-					{ id: 'k8s-monitoring', title: 'Monitoring in Kubernetes', url: 'https://www.educative.io/courses/advanced-kubernetes-techniques', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/kubernetes.svg' },
-					{ id: 'sre', title: 'Site Reliability Engineering', url: 'https://university.platformengineering.org/observability-for-platform-engineering', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/googlechrome.svg' }
+					{ id: 'grafana-lgtm', title: 'Grafana LGTM Stack', description: 'Complete observability with Grafana, Loki, Tempo, and Prometheus.', url: 'https://www.udemy.com/course/grafana-prometheus-loki-alloy-tempo', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/grafana.svg' },
+					{ id: 'k8s-monitoring', title: 'Monitoring in Kubernetes', description: 'Advanced Kubernetes monitoring, metrics, and alerting strategies.', url: 'https://www.educative.io/courses/advanced-kubernetes-techniques', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/kubernetes.svg' },
+					{ id: 'sre', title: 'Site Reliability Engineering', description: 'SRE principles, incident response, and system reliability practices.', url: 'https://university.platformengineering.org/observability-for-platform-engineering', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/googlechrome.svg' }
 				],
 					certifications: [
 						{ name: 'Observability for Platform Engineering', url: 'https://university.platformengineering.org/observability-for-platform-engineering', img: 'https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2F5450glz3ab58e5up7yv83exmo%2Fpublic%2F1750425033%2Fpe-badge+%282%29.1750425033270.png'}
@@ -144,10 +143,10 @@
 				{
 					title: "DevSecOps & Agile",
 				items: [
-					{ id: 'k8s-devsecops', title: 'Kubernetes DevOps & Security', url: 'https://kodekloud.com/courses/devsecops', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/kubernetes.svg' },
-					{ id: 'agile', title: 'Agile', url: 'https://www.coursera.org/learn/agile-atlassian-jira', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/jira.svg' },
-					{ id: 'microservices', title: 'Microservices', url: 'https://www.udemy.com/course/working-with-microservices-in-go', icon: '/microservices.svg' },
-					{ id: 'test-driven-development', title: 'Test-driven Development (TDD)', url: 'https://www.udemy.com/course/test-first-programming', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/testcafe.svg' }
+					{ id: 'k8s-devsecops', title: 'Kubernetes DevOps & Security', description: 'Security scanning, policy enforcement, and secure K8s deployments.', url: 'https://kodekloud.com/courses/devsecops', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/kubernetes.svg' },
+					{ id: 'agile', title: 'Agile', description: 'Agile methodologies, Scrum, and project management with Jira.', url: 'https://www.coursera.org/learn/agile-atlassian-jira', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/jira.svg' },
+					{ id: 'microservices', title: 'Microservices', description: 'Microservices architecture patterns and implementation in Go.', url: 'https://www.udemy.com/course/working-with-microservices-in-go', icon: '/microservices.svg' },
+					{ id: 'test-driven-development', title: 'Test-driven Development (TDD)', description: 'Test-first programming methodology and automated testing practices.', url: 'https://www.udemy.com/course/test-first-programming', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/testcafe.svg' }
 				],
 					certifications: [
 						{ name: 'Platform Engineering Leadership', url: 'https://university.platformengineering.org/platform-engineering-leadership', img: '/leadership-badge.png'},
@@ -164,11 +163,11 @@
 				{
 					title: "Database & Data Management",
 				items: [
-					{ id: 'redis', title: 'Redis/Valkey Administration', url: 'https://www.educative.io/courses/complete-guide-to-redis', icon: 'https://www.svgrepo.com/show/394393/redis.svg' },
-					{ id: 'nosql', title: 'NoSQL Database Design & Optimization', url: 'https://www.datacamp.com/courses/introduction-to-nosql', icon: 'https://www.svgrepo.com/show/381235/storage-drive-hard-hard-disk-disk.svg' },
-					{ id: 'mongodb', title: 'MongoDB', url: 'https://www.coursera.org/learn/introduction-to-mongodb', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/mongodb.svg' },
-					{ id: 'truenas', title: 'TrueNAS', url: 'https://www.udemy.com/course/truenas-fundamentals-for-beginners', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/truenas.svg' },
-					{ id: 'vault', title: 'Secrets Management (Vault)', url: 'https://www.udemy.com/course/hashicorp-vault', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/vault.svg' }
+					{ id: 'redis', title: 'Redis/Valkey Administration', description: 'In-memory data structure store for caching and real-time applications.', url: 'https://www.educative.io/courses/complete-guide-to-redis', icon: 'https://www.svgrepo.com/show/394393/redis.svg' },
+					{ id: 'nosql', title: 'NoSQL Database Design & Optimization', description: 'Document, key-value, and graph database design patterns and performance tuning.', url: 'https://www.datacamp.com/courses/introduction-to-nosql', icon: 'https://www.svgrepo.com/show/381235/storage-drive-hard-hard-disk-disk.svg' },
+					{ id: 'mongodb', title: 'MongoDB', description: 'Document-oriented NoSQL database for flexible data modeling and scaling.', url: 'https://www.coursera.org/learn/introduction-to-mongodb', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/mongodb.svg' },
+					{ id: 'truenas', title: 'TrueNAS', description: 'Network-attached storage solution for enterprise data management and backup.', url: 'https://www.udemy.com/course/truenas-fundamentals-for-beginners', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/truenas.svg' },
+					{ id: 'vault', title: 'Secrets Management (Vault)', description: 'Secure secrets storage, encryption, and access management for applications.', url: 'https://www.udemy.com/course/hashicorp-vault', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/vault.svg' }
 				],
 					certifications: [
 						{ name: 'HashiCorp Certified: Vault Associate', url: 'https://www.credly.com/org/hashicorp/badge/hashicorp-certified-vault-associate-003', img: 'https://images.credly.com/size/340x340/images/db3ed794-8b04-48c0-a49e-3e1f64e78b55/blob'}
@@ -177,8 +176,8 @@
 				{
 					title: "AI/ML Integration",
 				items: [
-					{ id: 'llm', title: 'LLM Integration', url: 'https://www.udemy.com/course/llm-engineering', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/openai.svg' },
-					{ id: 'mlops', title: 'Machine Learning Operations (MLOps)', url: 'https://www.datacamp.com/tracks/mlops-fundamentals', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tensorflow.svg' }
+					{ id: 'llm', title: 'LLM Integration', description: 'Large Language Model integration, prompt engineering, and AI application development.', url: 'https://www.udemy.com/course/llm-engineering', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/openai.svg' },
+					{ id: 'mlops', title: 'Machine Learning Operations (MLOps)', description: 'ML model deployment, monitoring, and lifecycle management in production.', url: 'https://www.datacamp.com/tracks/mlops-fundamentals', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tensorflow.svg' }
 				]
 				}
 			]
@@ -191,18 +190,18 @@
 				{
 					title: "Further Programming",
 				items: [
-					{ id: 'svelte-tailwind', title: 'Svelte & Tailwind', url: 'https://www.educative.io/courses/building-reactive-apps-with-svelte-and-tailwind', icon: 'https://www.svgrepo.com/show/487218/code.svg' },
-					{ id: 'sveltekit', title: 'Svelte 5 & SvelteKit', url: 'https://www.udemy.com/course/practical-sveltekit-guide-build-and-deploy-real-world-apps', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/svelte.svg' },
-					{ id: 'design-patterns', title: 'Design Patterns', url: 'https://www.udemy.com/course/working-with-design-patterns-in-go-golang', icon: 'https://www.svgrepo.com/show/428788/pattern-architecture-8.svg' },
-					{ id: 'auth', title: 'Authentication', url: 'https://www.udemy.com/course/enterprise-oauth-for-developers', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/auth0.svg' }
+					{ id: 'svelte-tailwind', title: 'Svelte & Tailwind', description: 'Modern reactive web development with Svelte framework and Tailwind CSS.', url: 'https://www.educative.io/courses/building-reactive-apps-with-svelte-and-tailwind', icon: 'https://www.svgrepo.com/show/487218/code.svg' },
+					{ id: 'sveltekit', title: 'Svelte 5 & SvelteKit', description: 'Full-stack web application development with SvelteKit framework.', url: 'https://www.udemy.com/course/practical-sveltekit-guide-build-and-deploy-real-world-apps', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/svelte.svg' },
+					{ id: 'design-patterns', title: 'Design Patterns', description: 'Software design patterns and architectural principles in Go programming.', url: 'https://www.udemy.com/course/working-with-design-patterns-in-go-golang', icon: 'https://www.svgrepo.com/show/428788/pattern-architecture-8.svg' },
+					{ id: 'auth', title: 'Authentication', description: 'OAuth, JWT, and enterprise authentication systems implementation.', url: 'https://www.udemy.com/course/enterprise-oauth-for-developers', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/auth0.svg' }
 				]
 				},
 				{
 					title: "Architecture & Design",
 				items: [
-					{ id: 'ux', title: 'UI/UX best practices', url: 'https://www.udemy.com/course/ultimate-guide-to-ux/', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/figma.svg' },
-					{ id: 'api-design', title: 'API design', url: 'https://www.pluralsight.com/paths/api-design-and-development', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/postman.svg' },
-					{ id: 'microservices-arch', title: 'Microservices architecture', url: 'https://www.udemy.com/course/the-complete-microservices-event-driven-architecture/', icon: '/microservices.svg' }
+					{ id: 'ux', title: 'UI/UX best practices', description: 'User experience design principles and interface design best practices.', url: 'https://www.udemy.com/course/ultimate-guide-to-ux/', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/figma.svg' },
+					{ id: 'api-design', title: 'API design', description: 'RESTful API design, documentation, and versioning strategies.', url: 'https://www.pluralsight.com/paths/api-design-and-development', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/postman.svg' },
+					{ id: 'microservices-arch', title: 'Microservices architecture', description: 'Event-driven architecture and distributed system design patterns.', url: 'https://www.udemy.com/course/the-complete-microservices-event-driven-architecture/', icon: '/microservices.svg' }
 				],
 					certifications: [
 						{ name: 'Kong Gateway Certified Associate', url: 'https://konghq.com/academy/exam-preparation', img: 'https://images.credly.com/images/dc659664-82e7-4b14-aee6-60130f28eb64/image.png'}
@@ -211,9 +210,9 @@
 				{
 					title: "AdTech",
 				items: [
-					{ id: 'programmatic', title: 'Programmatic advertising', url: 'https://www.udemy.com/course/programmatic-advertising-master-course/', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/googleads.svg' },
-					{ id: 'digital-marketing', title: 'Digital Marketing', url: 'https://www.udemy.com/course/digital-advertising-marketing-301-the-professional-course', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/googleanalytics.svg' },
-					{ id: 'ctr-prediction', title: 'Predicting CTR', url: 'https://www.datacamp.com/courses/predicting-ctr-with-machine-learning-in-python', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/python.svg' }
+					{ id: 'programmatic', title: 'Programmatic advertising', description: 'Automated ad buying, real-time bidding, and advertising technology platforms.', url: 'https://www.udemy.com/course/programmatic-advertising-master-course/', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/googleads.svg' },
+					{ id: 'digital-marketing', title: 'Digital Marketing', description: 'Digital advertising strategies, campaign optimization, and performance analytics.', url: 'https://www.udemy.com/course/digital-advertising-marketing-301-the-professional-course', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/googleanalytics.svg' },
+					{ id: 'ctr-prediction', title: 'Predicting CTR', description: 'Machine learning models for click-through rate prediction and optimization.', url: 'https://www.datacamp.com/courses/predicting-ctr-with-machine-learning-in-python', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/python.svg' }
 				]
 				}
 			]
@@ -371,8 +370,8 @@
 									{item.title}
 								</h4>
 								<p class="text-sm opacity-70 mb-6 group-hover:translate-x-1 transition-transform duration-300" style="color: var(--color-palette-light);">
-									Explore comprehensive learning materials and hands-on exercises.
-								</p>
+								{item.description}
+							</p>
 								<div class="flex items-center justify-between">
 									<a href="{item.url}" target="_blank" rel="noopener noreferrer"
 										class="text-sm font-bold py-3 px-6 rounded-xl transition-all duration-200 hover:scale-105 shadow-lg"
