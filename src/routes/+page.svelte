@@ -68,7 +68,7 @@
 					{ id: 'js-basics', title: 'JavaScript/TypeScript Basics', description: 'Foundation in modern JavaScript and TypeScript for web development.', url: 'https://www.educative.io/courses/learn-html-css-javascript-from-scratch', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/javascript.svg' },
 					{ id: 'typescript', title: 'TypeScript', description: 'Type-safe JavaScript development with advanced TypeScript features.', url: 'https://www.udemy.com/course/understanding-typescript', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/typescript.svg' },
 					{ id: 'tailwind', title: 'Tailwind CSS', description: 'Utility-first CSS framework for rapid UI development.', url: 'https://www.udemy.com/course/tailwind-from-scratch', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tailwindcss.svg' },
-					{ id: 'cleancode', title: 'Clean Code', description: 'Learn how to write readable, understandable and therefore maintainable code.' url: 'https://www.udemy.com/course/writing-clean-code', icon: 'https://www.svgrepo.com/show/97554/clean-code.svg' }
+					{ id: 'cleancode', title: 'Clean Code', description: 'Learn how to write readable, understandable and therefore maintainable code.', url: 'https://www.udemy.com/course/writing-clean-code', icon: 'https://www.svgrepo.com/show/97554/clean-code.svg' }
 				]
 				},
 				{
