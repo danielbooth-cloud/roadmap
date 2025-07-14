@@ -184,7 +184,7 @@
 					title: "Mathematics & AI/ML",
 				items: [
 						{ id: 'maths', title: 'Maths Introduction', description: 'Logic, equations, and functions.', url: 'https://hyperskill.org/courses/57-introduction-to-math', icon: 'https://www.svgrepo.com/show/210612/maths-add.svg' },
-						{ id: 'data', title: 'Algorithms and Data Structures', description: 'Algorithmic thinking, data manipulation, and enhance problem-solving skills.', url: 'https://hyperskill.org/courses/41-computer-algorithms-and-data-structures', icon: 'https://www.svgrepo.com/show/495209/data-2.svg' },
+						{ id: 'data', title: 'Algorithms and Data Structures', description: 'Algorithmic thinking, data manipulation, and problem-solving skills.', url: 'https://hyperskill.org/courses/41-computer-algorithms-and-data-structures', icon: 'https://www.svgrepo.com/show/495209/data-2.svg' },
 						{ id: 'llm', title: 'LLM Integration', description: 'Large Language Model integration, prompt engineering, and AI application development.', url: 'https://www.udemy.com/course/llm-engineering', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/openai.svg' },
 						{ id: 'mlops', title: 'Machine Learning Operations (MLOps)', description: 'ML model deployment, monitoring, and lifecycle management in production.', url: 'https://www.datacamp.com/tracks/mlops-fundamentals', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tensorflow.svg' }
 					]
