@@ -1,41 +1,41 @@
-<script>
+<script lang="ts">
 	let selectedPhase = $state(1);
 	
 	// Set item statuses directly in these arrays by adding/removing item IDs
 	// COMPLETED ITEMS: Add item IDs here for completed courses
-	let completedItems = new Set([
+	let completedItems = new Set<string>([
 	]);
 	
 	// IN PROGRESS ITEMS: Add item IDs here for courses you're currently taking
-	let inProgressItems = new Set([
+	let inProgressItems = new Set<string>([
 		'go-fundamentals'
 	]);
 	
 	// COMPLETED CERTIFICATIONS: Add certification names here for completed certs
-	let completedCertifications = new Set([
+	let completedCertifications = new Set<string>([
 		// Example: 'Platform Engineering Leadership'
 	]);
 	
 	// All other items will automatically show as "Pending"
 
-	function getItemStatus(itemId) {
+	function getItemStatus(itemId: string): 'completed' | 'in-progress' | 'pending' {
 		if (completedItems.has(itemId)) return 'completed';
 		if (inProgressItems.has(itemId)) return 'in-progress';
 		return 'pending';
 	}
 	
-	function getCertificationStatus(certName) {
+	function getCertificationStatus(certName: string): 'completed' | 'pending' {
 		if (completedCertifications.has(certName)) return 'completed';
 		return 'pending';
 	}
 
-	function getPhaseProgress(phaseItems) {
+	function getPhaseProgress(phaseItems: Array<{id: string}>): number {
 		const completed = phaseItems.filter(item => completedItems.has(item.id)).length;
 		return Math.round((completed / phaseItems.length) * 100);
 	}
 
-	function getSectionIcon(sectionTitle) {
-		const iconMap = {
+	function getSectionIcon(sectionTitle: string): string {
+		const iconMap: Record<string, string> = {
 			'Core Programming': '💻',
 			'SysOps Fundamentals': '⚙️',
 			'CI/CD & Version Control': '🔄',
@@ -366,11 +366,7 @@
 							<!-- Technology Icon -->
 							{#if item.icon}
 								<div class="absolute top-4 right-4 p-3 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300" style="background-color: rgba(254, 254, 253, 0.1);">
-									{#if typeof item.icon === 'string'}
-										<img src={item.icon} alt="{item.title} logo" class="w-6 h-6 icon-hover" />
-									{:else}
-										<svelte:component this={item.icon} class="w-6 h-6" style="color: var(--color-palette-light);" />
-									{/if}
+									<img src={item.icon} alt="{item.title} logo" class="w-6 h-6 icon-hover" />
 								</div>
 							{/if}
 							<div class="relative z-10 p-8">
@@ -430,9 +426,8 @@
 								</a>
 								<span class="absolute top-3 right-3 px-2 py-1 rounded-full text-xs font-bold shadow-lg"
 									style="{certStatus === 'completed' ? 'background-color: var(--color-palette-faded-emerald); color: var(--color-palette-emerald); border: 2px solid var(--color-palette-emerald);' : 
-										certStatus === 'in-progress' ? 'background-color: var(--color-palette-faded-pink); color: var(--color-palette-pink); border: 2px solid var(--color-palette-pink);' : 
 										'border: 2px solid var(--color-palette-light); color: var(--color-palette-light); background-color: transparent;'}">
-									{certStatus === 'completed' ? '✅' : certStatus === 'in-progress' ? '⏳' : '❌'}
+									{certStatus === 'completed' ? '✅' : '❌'}
 								</span>
 							</div>
 						{/each}
