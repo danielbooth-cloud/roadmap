@@ -48,12 +48,6 @@
 <div class="min-h-screen p-4" style="background-color: var(--color-palette-dark); font-family: system-ui, -apple-system, sans-serif;">
 	<!-- Header -->
 	<div class="mb-6">
-		<h1 class="text-2xl font-bold mb-2" style="color: var(--color-palette-light);">
-			📚 Current Learning Progress
-		</h1>
-		<div class="text-sm opacity-75" style="color: var(--color-palette-light);">
-			Last updated: {new Date().toLocaleDateString()}
-		</div>
 	</div>
 
 	<!-- In Progress Courses -->
