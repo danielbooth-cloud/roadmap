@@ -1,40 +1,35 @@
 <script lang="ts">
-	// Simplified version for embedding - mirrors main page data
-	let completedItems = new Set<string>([]);
-	
-	let inProgressItems = new Set<string>([
-		'go-fundamentals'
-	]);
-
-	function getItemStatus(itemId: string): 'completed' | 'in-progress' | 'pending' {
-		if (completedItems.has(itemId)) return 'completed';
-		if (inProgressItems.has(itemId)) return 'in-progress';
-		return 'pending';
-	}
-
-	// Simplified data structure for embed
-	const allCourses = [
-		{ id: 'go-fundamentals', title: 'Go Programming Fundamentals', url: 'https://hyperskill.org/courses/81-introduction-to-go', section: 'Core Programming' },
-		{ id: 'go-advanced', title: 'Advanced Go', url: 'https://hyperskill.org/courses/25-go-developer', section: 'Core Programming' },
-		{ id: 'js-basics', title: 'JavaScript/TypeScript Basics', url: 'https://www.educative.io/courses/learn-html-css-javascript-from-scratch', section: 'Core Programming' },
-		{ id: 'typescript', title: 'TypeScript', url: 'https://www.udemy.com/course/understanding-typescript', section: 'Core Programming' },
-		{ id: 'tailwind', title: 'Tailwind CSS', url: 'https://www.udemy.com/course/tailwind-from-scratch', section: 'Core Programming' },
-		{ id: 'cleancode', title: 'Clean Code', url: 'https://www.udemy.com/course/writing-clean-code', section: 'Core Programming' },
-		{ id: 'linux-admin', title: 'Linux System Administration', url: 'https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job', section: 'SysOps Fundamentals' },
-		{ id: 'networking', title: 'Networking Concepts', url: 'https://www.udemy.com/course/essential-computer-networking-for-devops-cloud-and-more/', section: 'SysOps Fundamentals' },
-		{ id: 'git-advanced', title: 'Git Advanced Workflows', url: 'https://www.datacamp.com/courses/advanced-git', section: 'CI/CD & Version Control' }
-	];
+	import { allItems, getItemStatus, phases } from '$lib/data/roadmap';
 
 	const inProgressCourses = $derived(
-		allCourses
+		allItems
 			.filter(course => getItemStatus(course.id) === 'in-progress')
-			.map(course => ({ ...course, status: getItemStatus(course.id) }))
+			.map(course => {
+				// Find the actual section this course belongs to
+				const phase = phases.find(p => p.sections.some(s => s.items.some(i => i.id === course.id)));
+				const section = phase?.sections.find(s => s.items.some(i => i.id === course.id));
+				
+				return { 
+					...course, 
+					status: getItemStatus(course.id), 
+					section: section?.title || 'Learning' 
+				};
+			})
 	);
 
 	const completedCourses = $derived(
-		allCourses
+		allItems
 			.filter(course => getItemStatus(course.id) === 'completed')
-			.map(course => ({ ...course, status: getItemStatus(course.id) }))
+			.map(course => {
+				const phase = phases.find(p => p.sections.some(s => s.items.some(i => i.id === course.id)));
+				const section = phase?.sections.find(s => s.items.some(i => i.id === course.id));
+				
+				return { 
+					...course, 
+					status: getItemStatus(course.id), 
+					section: section?.title || 'Completed' 
+				};
+			})
 	);
 </script>
 
