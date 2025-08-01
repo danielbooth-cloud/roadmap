@@ -30,7 +30,8 @@ export interface Phase {
 export const completedItems = new Set<string>([]);
 
 export const inProgressItems = new Set<string>([
-	'go-fundamentals'
+	'go-fundamentals',
+	'networking'
 ]);
 
 export const completedCertifications = new Set<string>([
