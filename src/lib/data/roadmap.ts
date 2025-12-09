@@ -101,7 +101,8 @@ export const phases: Phase[] = [
 				title: "Infrastructure as Code",
 				items: [
 					{ id: 'terraform', title: 'Terraform', description: 'Infrastructure as Code with Terraform for cloud provisioning.', url: 'https://www.udemy.com/course/terraform-authoring-and-operations-professional', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/terraform.svg' },
-					{ id: 'ansible', title: 'Ansible', description: 'Configuration management and automation with Ansible playbooks.', url: 'https://kodekloud.com/courses/ansible-for-the-absolute-beginners-course', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/ansible.svg' }
+					{ id: 'ansible', title: 'Ansible', description: 'Configuration management and automation with Ansible playbooks.', url: 'https://kodekloud.com/courses/ansible-for-the-absolute-beginners-course', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/ansible.svg' },
+					{ id: 'terragrunt', title: 'Terragrunt for Beginners', description: 'DRY Terraform configurations with Terragrunt wrapper for managing multiple environments.', url: 'https://kodekloud.com/courses/terragrunt-for-beginners', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/terraform.svg' }
 				]
 			},
 			{
